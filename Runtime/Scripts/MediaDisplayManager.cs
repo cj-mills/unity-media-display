@@ -21,6 +21,8 @@ namespace MediaDisplay
             Material screenMaterial = new Material(Shader.Find("Unlit/Texture"));
             screenMaterial.mainTexture = displayTexture;
             meshRenderer.material = screenMaterial;
+            // Raise the event to inform other scripts that the texture has been changed
+            TextureChangeEvent.RaiseMainTextureChangedEvent(meshRenderer.material);
         }
 
         /// <summary>
@@ -68,7 +70,7 @@ namespace MediaDisplay
         /// <param name="webcamDimensions">The desired resolution of the webcam stream.</param>
         /// <param name="webcamFrameRate">The desired frame rate of the webcam stream.</param>
         /// <returns>Returns true if the webcam stream has started playing, false otherwise.</returns>
-        public static bool InitializeWebcam(ref WebCamTexture webcamTexture, string deviceName, Vector2Int webcamDimensions, int webcamFrameRate=60)
+        public static bool InitializeWebcam(ref WebCamTexture webcamTexture, string deviceName, Vector2Int webcamDimensions, int webcamFrameRate = 60)
         {
             // Stop the webcam stream if it's already playing.
             if (webcamTexture != null && webcamTexture.isPlaying)
