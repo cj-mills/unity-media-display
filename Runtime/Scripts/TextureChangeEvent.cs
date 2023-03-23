@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Contains utility classes for creating and managing media displays in Unity.
 namespace MediaDisplay
 {
     public class TextureChangeEvent : MonoBehaviour
