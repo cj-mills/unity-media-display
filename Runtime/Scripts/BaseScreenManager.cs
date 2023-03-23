@@ -2,6 +2,7 @@ using UnityEngine;
 using MediaDisplay;
 using System.Collections;
 
+// Contains utility classes for creating and managing media displays in Unity.
 namespace MediaDisplay
 {
     public abstract class BaseScreenManager : MonoBehaviour
