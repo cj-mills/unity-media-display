@@ -30,7 +30,7 @@ namespace MediaDisplay
         // Toggle key settings
         [Header("Toggle Key")]
         [Tooltip("Key to toggle between image and webcam feed")]
-        [SerializeField] protected KeyCode toggleKey;
+        [SerializeField] protected KeyCode toggleKey = KeyCode.Space;
 
         protected Texture currentTexture;
         protected WebCamDevice[] webcamDevices;
