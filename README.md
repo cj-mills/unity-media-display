@@ -20,12 +20,12 @@ Unity Media Display is a Unity package for creating a demo screen to display tes
 
 ### Installation
 
-You can install the Unity-Media-Display package using the Unity Package Manager:
+You can install the unity-media-display package using the Unity Package Manager:
 
 1. Open your Unity project.
 2. Go to Window > Package Manager.
 3. Click the "+" button in the top left corner, and choose "Add package from git URL..."
-4. Enter the GitHub repository URL: `https://github.com/cj-mills/Unity-Media-Display.git`
+4. Enter the GitHub repository URL: `https://github.com/cj-mills/unity-media-display.git`
 5. Click "Add". The package will be added to your project.
 
 For Unity versions older than 2021.1, add the Git URL to the `manifest.json` file in your project's `Packages` folder as a dependency:
@@ -33,7 +33,7 @@ For Unity versions older than 2021.1, add the Git URL to the `manifest.json` fil
 ```json
 {
   "dependencies": {
-    "com.cj-mills.unity-media-display": "https://github.com/cj-mills/Unity-Media-Display.git",
+    "com.cj-mills.unity-media-display": "https://github.com/cj-mills/unity-media-display.git",
     // other dependencies...
   }
 }
