@@ -47,7 +47,7 @@ Here's an example of using the `MediaDisplay.MediaDisplayManager` class:
 
 ```c#
 using UnityEngine;
-using MediaDisplay;
+using CJM.MediaDisplay;
 
 public class ExampleMediaDisplay : MonoBehaviour
 {
