@@ -1,5 +1,5 @@
 using UnityEngine;
-using MediaDisplay;
+using CJM.MediaDisplay;
 using System.Collections;
 
 // Contains utility classes for creating and managing media displays in Unity.
