@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace MediaDisplay
+namespace CJM.MediaDisplay
 {
     public class DependencyDefineSymbolAdder
     {
