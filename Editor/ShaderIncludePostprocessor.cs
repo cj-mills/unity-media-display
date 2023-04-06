@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.Rendering;
 
 // Contains utility classes for creating and managing media displays in Unity.
-namespace MediaDisplay
+namespace CJM.MediaDisplay
 {
     /// <summary>
     /// A build postprocessor that ensures the specified shader is included in the build.
