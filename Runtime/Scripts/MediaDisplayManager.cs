@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Contains utility classes for creating and managing media displays in Unity.
-namespace MediaDisplay
+namespace CJM.MediaDisplay
 {
     // Provides utility methods for setting up and managing a media display screen in Unity.
     public static class MediaDisplayManager
