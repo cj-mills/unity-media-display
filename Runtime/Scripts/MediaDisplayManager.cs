@@ -72,14 +72,17 @@ namespace CJM.MediaDisplay
                 // Set the camera's orthographic size based on the aspect ratios
                 if (screenAspectRatio > cameraAspectRatio)
                 {
-                    camera.orthographicSize = screenDimensions.y / 2 / camera.aspect;
+                    // Wider screen object
+                    camera.orthographicSize = screenDimensions.x / 2 / camera.aspect;
                 }
                 else
                 {
+                    // Taller screen object
                     camera.orthographicSize = screenDimensions.y / 2;
                 }
             }
         }
+
 
 
         /// <summary>
