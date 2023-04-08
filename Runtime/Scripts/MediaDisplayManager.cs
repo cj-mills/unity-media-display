@@ -62,11 +62,25 @@ namespace CJM.MediaDisplay
                 Vector3 position = new Vector3(screenDimensions.x / 2, screenDimensions.y / 2, -10f);
                 cameraObject.transform.position = position;
 
-                // Configure the camera for orthographic mode and set its size
+                // Configure the camera for orthographic mode
                 camera.orthographic = true;
-                camera.orthographicSize = screenDimensions.y / 2;
+
+                // Calculate the aspect ratios of the screen object and the camera's viewport
+                float screenAspectRatio = (float)screenDimensions.x / screenDimensions.y;
+                float cameraAspectRatio = (float)camera.pixelWidth / camera.pixelHeight;
+
+                // Set the camera's orthographic size based on the aspect ratios
+                if (screenAspectRatio > cameraAspectRatio)
+                {
+                    camera.orthographicSize = screenDimensions.y / 2 / camera.aspect;
+                }
+                else
+                {
+                    camera.orthographicSize = screenDimensions.y / 2;
+                }
             }
         }
+
 
         /// <summary>
         /// Initializes and plays a webcam stream with the specified settings.
