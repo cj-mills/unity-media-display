@@ -129,6 +129,8 @@ namespace CJM.MediaDisplay
         protected virtual void HandleResolutionChanged(Resolution newResolution)
         {
             UpdateScreenTextureAsync();
+            // Handle the resolution change here
+            Debug.Log($"Resolution changed to: {newResolution.width}x{newResolution.height}");
         }
 
         // Unsubscribe from the texture change event when the script is disabled.
