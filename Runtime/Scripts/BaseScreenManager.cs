@@ -126,6 +126,11 @@ namespace CJM.MediaDisplay
             }
         }
 
+        protected virtual void HandleResolutionChanged(Resolution newResolution)
+        {
+            UpdateScreenTextureAsync();
+        }
+
         // Unsubscribe from the texture change event when the script is disabled.
         protected virtual void OnDisable()
         {
