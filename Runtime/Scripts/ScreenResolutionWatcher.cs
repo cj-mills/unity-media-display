@@ -7,7 +7,7 @@ namespace CJM.MediaDisplay
     {
         // Define a delegate and an event for the resolution change
         public delegate void ResolutionChangedDelegate(Resolution newResolution);
-        public event ResolutionChangedDelegate OnResolutionChanged;
+        public static event ResolutionChangedDelegate OnResolutionChanged;
 
         private Resolution _currentResolution;
 
