@@ -41,7 +41,7 @@ namespace CJM.MediaDisplay
         protected virtual void OnEnable()
         {
             TextureChangeEvent.OnMainTextureChanged += HandleMainTextureChanged;
-            ScreenResolutionWatcher.OnResolutionChanged += HandleMainTextureChanged;
+            ScreenResolutionWatcher.OnResolutionChanged += UpdateCurrentTexture;
         }
 
         // Initializes the application's target frame rate and configures the webcam devices.
@@ -130,7 +130,7 @@ namespace CJM.MediaDisplay
         protected virtual void OnDisable()
         {
             TextureChangeEvent.OnMainTextureChanged -= HandleMainTextureChanged;
-            ScreenResolutionWatcher.OnResolutionChanged -= HandleMainTextureChanged;
+            ScreenResolutionWatcher.OnResolutionChanged -= UpdateCurrentTexture;
         }
     }
 }
