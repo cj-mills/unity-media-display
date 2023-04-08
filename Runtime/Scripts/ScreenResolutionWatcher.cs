@@ -27,6 +27,8 @@ namespace CJM.MediaDisplay
 
                 // Invoke the event
                 OnResolutionChanged?.Invoke(_currentResolution);
+
+                Debug.Log($"new resolution: {_currentResolution}");
             }
         }
     }
