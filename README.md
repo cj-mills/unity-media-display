@@ -9,7 +9,7 @@ https://user-images.githubusercontent.com/9126128/231288868-2116cc3a-ebbe-4b43-9
 
 
 ## Demo Project
-https://github.com/cj-mills/UnityMediaDisplay_Demo
+* **GitHub Repository:** https://github.com/cj-mills/UnityMediaDisplay_Demo
 
 
 ## Features
