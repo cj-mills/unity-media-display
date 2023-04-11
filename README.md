@@ -4,6 +4,11 @@ Unity Media Display is a Unity package for creating a demo screen to display tes
 
 
 
+## Demo Video
+https://user-images.githubusercontent.com/9126128/231288868-2116cc3a-ebbe-4b43-9305-30fea6887bf4.mp4
+
+
+
 ## Features
 
 - Display test images, videos, or webcam streams on a demo screen
