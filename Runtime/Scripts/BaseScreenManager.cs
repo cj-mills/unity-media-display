@@ -37,6 +37,11 @@ namespace CJM.MediaDisplay
         protected WebCamTexture webcamTexture;
         protected string currentWebcam;
 
+        // The value to multiply the webcam frame rate by to determine the application's target framerate.
+        protected const int WebcamFrameRateMultiplier = 4;
+        // The value for the width of an uninitialized webcam device
+        protected const int UninitializedWebcamWidth = 16;
+
         // Subscribe to the texture change event
         protected virtual void OnEnable()
         {
@@ -94,14 +99,14 @@ namespace CJM.MediaDisplay
             // Set the current texture to the webcam texture if useWebcam is enabled, otherwise use the test texture.
             currentTexture = useWebcam ? webcamTexture : testTexture;
             // Set the target frame rate based on whether the webcam is being used or not.
-            Application.targetFrameRate = useWebcam ? webcamFrameRate * 4 : 500;
+            Application.targetFrameRate = useWebcam ? webcamFrameRate * WebcamFrameRateMultiplier : maxFrameRate;
         }
 
         // Coroutine to update the screen texture asynchronously.
         protected IEnumerator UpdateScreenTextureAsync()
         {
             // Wait until the webcamTexture is ready if useWebcam is enabled.
-            while (useWebcam && webcamTexture.isPlaying && webcamTexture.width <= 16)
+            while (useWebcam && webcamTexture.isPlaying && webcamTexture.width <= UninitializedWebcamWidth)
             {
                 yield return null;
             }
@@ -109,8 +114,6 @@ namespace CJM.MediaDisplay
             // Update the screen texture with the current texture (image or webcam feed).
             MediaDisplayManager.UpdateScreenTexture(screenObject, currentTexture, cameraObject, useWebcam);
         }
-
-        // Any other shared methods or functionality can be added here
 
         // Handle the texture change event.
         protected virtual void HandleMainTextureChanged(Material material)
