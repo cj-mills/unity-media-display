@@ -8,10 +8,6 @@ Unity Media Display is a Unity package for creating a demo screen to display tes
 https://user-images.githubusercontent.com/9126128/231288868-2116cc3a-ebbe-4b43-9305-30fea6887bf4.mp4
 
 
-## Demo Project
-* **GitHub Repository:** https://github.com/cj-mills/UnityMediaDisplay_Demo
-
-
 
 ## Demo Projects
 
