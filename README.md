@@ -12,6 +12,18 @@ https://user-images.githubusercontent.com/9126128/231288868-2116cc3a-ebbe-4b43-9
 * **GitHub Repository:** https://github.com/cj-mills/UnityMediaDisplay_Demo
 
 
+
+## Demo Projects
+
+| GitHub Repository                                            | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [UnityMediaDisplay_Demo](https://github.com/cj-mills/UnityMediaDisplay_Demo) | A simple demo project demonstrating how to use the Unity-Media-Display and Unity-CV-Image-Gallery packages in Unity. |
+| [barracuda-image-classification-demo](https://github.com/cj-mills/barracuda-image-classification-demo) | Perform image classification using computer vision models.   |
+| [barracuda-inference-yolox-demo](https://github.com/cj-mills/barracuda-inference-yolox-demo) | Perform object detection using YOLOX models.                 |
+| [barracuda-inference-posenet-demo](https://github.com/cj-mills/barracuda-inference-posenet-demo) | Perform 2D human pose estimation using PoseNet models.       |
+
+
+
 ## Features
 
 - Display test images, videos, or webcam streams on a demo screen
